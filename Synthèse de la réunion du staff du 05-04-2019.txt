@@ -1,0 +1,17 @@
+Première partie de la réunion : Sondage de la motivation restante dans les membres du staff et piliers du discord. Mise à jour des rôles des joueurs : 
+1) Upgrade de certains joueurs actifs.
+2) Suppression du grade de modérateur pour certains joueurs.
+
+Seconde partie : Nouvelle proposition de recrutement ==> le recrutement in-game.
+                                                     ==> le transfert = jouer avec des gens sur d'autres serveurs Discord et leur proposer de rejoindre le nôtre.
+
+Troisième partie : Priorité à l'activité ==> Rejoindre plus souvent les chanels vocaux pour maintenir les liens et l'activité.
+                                         ==> Poster plus régulièrement des messages sur les serveurs textuels.
+
+Quatrième partie : S'investir et donner priorité aux projets donnant une attraction et plaisant aux joueurs sur le Discord ( ex : système d'expérience du bot ).
+
+Cinquième partie : Création d'un document google commun modifiable et gérer au niveau des formules par certains membres qualifiés afin de
+
+Sixième partie : Proposition d'ajout de nouveaux grades/rôles spécifiques au lieu de l'attribution automatique du qualificatif "modérateur" afin de réduire
+le nombre de modérateurs au stricte nécéssaire et permettre aux titulaires des grades de ce concentrer dans leur tâche sans attenuer leur activité ( exemple de grade :
+codeur bot, streamer, maintenance, helper , etc ). Les grades devront être assez généraux pour ne pas être trop nombreux mais specifiques dans leur domaine.

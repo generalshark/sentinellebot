@@ -1,0 +1,1 @@
+Lien pour inviter le bot discord ( à garder ) : https://discordapp.com/oauth2/authorize?client_id=562645560998494208&scope=bot&permissions=2146958839
