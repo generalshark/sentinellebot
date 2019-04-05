@@ -240,4 +240,4 @@ if (message.content === 'df8ball') {
 
 
 */
-bot.login('NTYyNjQ1NTYwOTk4NDk0MjA4.XKN3ew.jKFKuRFCLa3PeYeLVG0lErwSBh8')
+bot.login('process.env.TOKEN');
