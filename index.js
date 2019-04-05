@@ -163,76 +163,75 @@ bot.on('message', function(message) {
 })
 */
 
-/*
 bot.on('message', function(message) {
 if (message.content === 'df8ball') {
         random2()
 		switch (alea) {
   			case '1':
-    			message.channel.send(Jamais);
+    			message.channel.send('Jamais');
     		break;
   			case '2':
-    			message.channel.send(Absolument pas);
+    			message.channel.send('Absolument pas');
     		break;
     		case '3':
-    			message.channel.send(Pas du tout);
+    			message.channel.send('Pas du tout');
     		break;
     		case '4':
-    			message.channel.send(Non);
+    			message.channel.send('Non');
     		break;
     		case '5':
-    			message.channel.send(Pas vraiment);
+    			message.channel.send('Pas vraiment');
     		break;
     		case '6':
-    			message.channel.send(Plutôt pas);
+    			message.channel.send('Plutôt pas');
     		break;
     		case '7':
-    			message.channel.send(Ni oui ni non);
+    			message.channel.send('Ni oui ni non');
     		break;
     		case '8':
-    			message.channel.send(Moyennement);
+    			message.channel.send('Moyennement');
     		break;
     		case '9':
-    			message.channel.send(Partiellement);
+    			message.channel.send('Partiellement');
     		break;
     		case '10':
-    			message.channel.send(Un peu);
+    			message.channel.send('Un peu');
     		break;
     		case '11':
-    			message.channel.send(Pas mal);
+    			message.channel.send('Pas mal');
     		break;
     		case '12':
-    			message.channel.send(Plutôt);
+    			message.channel.send('Plutôt');
     		break;
   			case '13':
-    			message.channel.send(Oui);
+    			message.channel.send('Oui');
     		break;
     		case '14':
-    			message.channel.send(Absolument);
+    			message.channel.send('Absolument');
     		break;
     		case '15':
-    			message.channel.send(Beaucoup);
+    			message.channel.send('Beaucoup');
     		break;
     		case '16':
-    			message.channel.send(Enormement);
+    			message.channel.send('Enormement');
     		break;
     		case '17':
-    			message.channel.send(Bien plus que tu ne le penses);
+    			message.channel.send('Bien plus que tu ne le penses');
     		break;
     		case '18':
-    			message.channel.send(A la folie);
+    			message.channel.send('A la folie');
     		break;
     		case '19':
-    			message.channel.send(Passionement);
+    			message.channel.send('Passionement');
     		break;
     		case '20':
-    			message.channel.send(Naturellement);
+    			message.channel.send('Naturellement');
     		break;
     		case '21':
-    			message.channel.send(Elementaire mon cher Watson);
+    			message.channel.send('Elementaire mon cher Watson');
     		break;
   			default:
-    			message.channel.send(Je ne sais pas ... OwO);
+    			message.channel.send('Je ne sais pas ... OwO');
     		break;
 		}
 	}
