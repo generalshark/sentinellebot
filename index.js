@@ -12,8 +12,8 @@ function random(min, max){
 
  function test(min, max){
      min = Math.ceil(1);
-     max = Math.floor(21);
-     alea = Math.floor(Math.random() * (max - min +1)+ min);
+     max = Math.floor(4);
+     randnum = Math.floor(Math.random() * (max - min +1)+ min);
  }
 
 //Instance
@@ -144,6 +144,29 @@ bot.on('message', function(message) {
 bot.on('message', function(message) {
 	if (message.content === 'df8ball') {
 		test()
+		if (randnum ==1){
+		message.channel.send('Jamais')
+		}
+
+		if (randnum ==2){
+		message.channel.send('Absolument pas')
+		}
+
+		if (randnum ==3){
+		message.channel.send('Pas du tout')
+		}
+
+		if (randnum ==4){
+		message.channel.send('Non')
+		}
+	}
+})
+*/
+
+/*
+bot.on('message', function(message) {
+	if (message.content === 'df8ball') {
+		test()
 		if (alea ==1){
 		message.channel.send(Jamais)
 		}
@@ -162,6 +185,7 @@ bot.on('message', function(message) {
 	}
 })
 */
+
 
 bot.on('message', function(message) {
 if (message.content === 'df8ball') {
@@ -237,6 +261,4 @@ if (message.content === 'df8ball') {
 	}
 })
 
-
-*/
 bot.login('process.env.TOKEN');
