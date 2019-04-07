@@ -153,7 +153,7 @@ bot.on('message', function(message) {
 		const embed = new Discord.RichEmbed()
   			.setTitle("**Utilisation** : `df<ma_commande>`")
   			.setAuthor("Dfhelp2", "https://avatars0.githubusercontent.com/u/38438400?s=40&v=4")
-			.setcolor(0x00AE86)
+			.setColor(0x00AE86)
 			.setTimestamp()
 			.setFooter("©️DontFall - Propriété intélectuelle de Yoruichi_DontFall et de la Team DontFall")
 		message.channel.send({embed});
