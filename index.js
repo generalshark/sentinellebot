@@ -261,4 +261,4 @@ if (message.content === 'df8ball') {
 	}
 })
 
-bot.login('process.env.TOKEN1');
+bot.login('process.env.TOKEN');
