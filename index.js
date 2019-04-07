@@ -159,7 +159,7 @@ bot.on('message', function(message) {
 			.setThumbnail("https://cdn.discordapp.com/attachments/542010625401028608/564525321261416448/Dont_Fall-small-size-.png")
 			.addField("Commandes serveur",
     			"-dfinserv : Affiche les informations relatives au serveur Discord.")
-			.setImage("https://cdn.discordapp.com/attachments/542010625401028608/564531454567251988/admin-ajax.png")
+			.setImage("https://cdn.discordapp.com/attachments/542010625401028608/564532061810196502/admin-ajax.png")
 		message.channel.send({embed});
 	}
 
