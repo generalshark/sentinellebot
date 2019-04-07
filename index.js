@@ -145,8 +145,7 @@ bot.on('message', function(message) {
 			'\n-dfpoff : [COMMANDE EN MAINTENANCE] Jeu de pile ou face. Ici, affiche le score global des joueurs et du bot [COMMANDE EN MAINTENANCE].' +
 			'\n-df6d : Lancé de dé à six faces.' +
 			'\n-df8ball : Jeu du 8ball affichant une réponse à une de vos questions pouvant être répondu par oui ou non. Exemple : df8ball Suis-je majeur ?```')
-		        client.user.username('discordjs')
-                         .then(user => console.log(`My new username is ${user.username}`))
+                         .username(user => console.log(`My new username is ${user.username}`))
 	}
 
 	if (message.content === 'dfhelp2') {
