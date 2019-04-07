@@ -71,10 +71,10 @@ function randombj2(min, max){
 
 //Instance
 bot.on('ready', function() {
-	bot.user.setGame('Ceci est un test | dfhelp').catch(console.error)
-	console.log("\\\\\\\\\\\\\\\\\\\\")
+	bot.user.setGame('offre des posibilités uniques | dfhelp').catch(console.error)
+	console.log("\n\n=======================================================")
 	console.log("Le bot s'est correctement connecté au serveur Discord")
-	console.log("////////////////////")
+	console.log("=======================================================\n\n")
 })
 
 //Accueil et départ des membres et attribution d'un rôle
@@ -146,7 +146,7 @@ bot.on('message', function(message) {
 			'\n-df6d : Lancé de dé à six faces.' +
 			'\n-df8ball : Jeu du 8ball affichant une réponse à une de vos questions pouvant être répondu par oui ou non. Exemple : df8ball Suis-je majeur ?```')
                         user = message.member.user.tag
-			console.log("L'utilisateur " + user + " a utilisé la commande dfhelp.")
+			console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfhelp.")
 	}
 
 	if (message.content === 'dfhelp2') {
@@ -170,14 +170,18 @@ bot.on('message', function(message) {
     	let mdate = message.member.joinedAt
     	let numero = message.guild.MemberCount
 		message.channel.send('**Nom du serveur** : "' + server_name + '"' + '\n**Créé le** : ' + cdate + '\n**Membres inscrits** : ' + server_size + '\n\n**Rejoint le** : ' + mdate + '\n**Id** : ' + numero)
+		user = message.member.user.tag
+		console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfiserv.")
 	}
-		if (message.content === 'dftest') {
+		if (message.content === 'dfiservs') {
     	let nom = message.guild.name
     	let cdate = message.guild.CreatedAt
     	let mdate = message.member.joinedAt
     	let numero = message.guild.MemberCount
     	message.channel.send('Le serveur **' + nom + '** a été créé le **' + cdate + '**.' + '\nVous l"avez rejoint le **' + mdate + '** et en êtes ainsi le membre n°**' + numero + '**.')
-    }
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfiservs.")
+}
 
 
     /*if (message.content === 'df8ball') {
@@ -202,6 +206,8 @@ bot.on('message', function(message) {
 
     if (message.content === 'dfwebhook') {
     	webhookf.send('Je n"ai pas encore de rôle pour le moment 😕' + '\nhttps://data.photofunky.net/output/image/9/4/6/e/946e99/photofunky.gif')
+    	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfwebhook.")
     }
 
 })
@@ -258,7 +264,6 @@ bot.on('message', function(message) {
 bot.on('message', function(message) {
 if (message.content.startsWith("df8ball")) 
 {
-		console.log('Un joueur a lancé la commande df8ball.')
         test()
 		switch (randnum) 
 		{
@@ -330,12 +335,15 @@ if (message.content.startsWith("df8ball"))
     		break;
 		}
 	}
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande df8ball.")
 })
 
 bot.on('message', function(message) {
 if (message.content.startsWith("df6d")) 
 {
-		console.log('Un joueur a lancé la commande df6d.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande df6d.")
         random3()
 		switch (randnum) 
 		{
@@ -373,7 +381,8 @@ let scorebo
 
 if (message.content.startsWith("dfpoff")) 
 {
-		console.log('Un joueur a lancé la commande dfpoff.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfpoff.")
         random4()
 		switch (randnum) 
 		{
@@ -398,7 +407,8 @@ if (message.content.startsWith("dfpoff"))
 
 if (message.content.startsWith("dfpofp")) 
 {
-		console.log('Un joueur a lancé la commande dfpofp.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfpofp.")
         random4()
 		switch (randnum) 
 		{
@@ -423,7 +433,8 @@ if (message.content.startsWith("dfpofp"))
 
 if (message.content.startsWith("dfpofr")) 
 {
-		console.log('Un joueur a lancé la commande dfpofr.')
+		user = message.member.user.tag
+		console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfpofr.")
 		webhookpof.send('Le score du bot est de ' + scorebo + ' points et celui des joueurs est de ' + scorejo + ' points.')
 	}
 
@@ -432,7 +443,8 @@ if (message.content.startsWith("dfpofr"))
 bot.on('message', function(message) {
 if (message.content.startsWith("dfe10")) 
 {
-		console.log('Un joueur a lancé la commande dfe.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfe10.")
         random5()
 		switch (randnum) 
 		{
@@ -482,7 +494,8 @@ if (message.content.startsWith("dfbj1"))
 	let scorebjj = 0
 	let scorebjb = 0
 
-		console.log('Un joueur a lancé la commande dfbj1.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfbj1.")
         randombj1()
 		switch (randnum) 
 		{
@@ -672,7 +685,8 @@ if (message.content.startsWith("dfbj2"))
 	let scorebjj = 0
 	let scorebjb = 0
 
-		console.log('Un joueur a lancé la commande dfbj2.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfbj2.")
         randombj2()
 		switch (randnum) 
 		{
@@ -862,7 +876,8 @@ if (message.content.startsWith("dfbj3"))
 	let scorebjj = 0
 	let scorebjb = 0
 
-		console.log('Un joueur a lancé la commande dfbj3.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfbj3.")
         randombj3()
 		switch (randnum) 
 		{
@@ -1052,7 +1067,8 @@ if (message.content.startsWith("dfbj4"))
 	let scorebjj = 0
 	let scorebjb = 0
 
-		console.log('Un joueur a lancé la commande dfbj4.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfbj4.")
         randombj4()
 		switch (randnum) 
 		{
@@ -1242,7 +1258,8 @@ if (message.content.startsWith("dfbj5"))
 	let scorebjj = 0
 	let scorebjb = 0
 
-		console.log('Un joueur a lancé la commande dfbj5.')
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfbj5.")
         randombj5()
 		switch (randnum) 
 		{
