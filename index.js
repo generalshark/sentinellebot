@@ -150,10 +150,10 @@ bot.on('message', function(message) {
 	}
 
 	if (message.content === 'dfhelp2') {
-		message.channel.send('```**|=====| Commandes serveur |=====|**' + 
-			'\n-dfinserv : Affiche les informations relatives au serveur Discord.' +
-			'\n\n**|=====| Général |=====|**' +
-			'\n-dfhelp : Affiche les commades disponibles du bot.```')
+		const embed = new Discord.RichEmbed()
+  			.setTitle("Utilisation : `df<nom_commande>`")
+  			.setAuthor("Dfhelp2", "https://i.imgur.com/lm8s41J.png")
+		message.channel.send({embed});
 	}
 
 	if (message.content === 'dfhelp3') {
