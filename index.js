@@ -151,7 +151,7 @@ bot.on('message', function(message) {
 
 	if (message.content === 'dfhelp2') {
 		const embed = new Discord.RichEmbed()
-  			.setTitle("Utilisation : `df<ma_commande>`")
+  			.setTitle("**Utilisation** : `df<ma_commande>`")
   			.setAuthor("Dfhelp2", "https://i.imgur.com/dxEjIsT.jpg")
 		message.channel.send({embed});
 	}
