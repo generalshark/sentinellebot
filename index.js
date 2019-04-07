@@ -264,6 +264,8 @@ bot.on('message', function(message) {
 bot.on('message', function(message) {
 if (message.content.startsWith("df8ball")) 
 {
+	user = message.member.user.tag
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande df8ball.")
         test()
 		switch (randnum) 
 		{
@@ -335,8 +337,6 @@ if (message.content.startsWith("df8ball"))
     		break;
 		}
 	}
-	user = message.member.user.tag
-	console.log("\n\nL'utilisateur " + user + " a utilisé la commande df8ball.")
 })
 
 bot.on('message', function(message) {
