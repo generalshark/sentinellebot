@@ -128,10 +128,23 @@ bot.on("guildMemberAdd", member => {
 
 bot.on('message', function(message) {
 	if (message.content === 'dfhelp') {
-		message.channel.send('**|=====| Commandes serveur |=====|**' + 
+		message.channel.send('```**|=====| Commandes serveur |=====|**' + 
 			'\n-dfinserv : Affiche les informations relatives au serveur Discord.' +
+			'\n-dfinservs : Affiche les informations relatives au serveur Discord de manière structurée (phrases).' +
 			'\n\n**|=====| Général |=====|**' +
-			'\n-dfhelp : Affiche les commades disponibles du bot.')
+			'\n-dfhelp : Affiche les commades disponibles du bot.' +
+			'\n\n**|=====| Fun/Minigame |=====|**' +
+			'\n-dfbj1 : Jeu du BlackJack. Niveau de difficulté 1 (peaceful).' +
+			'\n-dfbj2 : Jeu du BlackJack. Niveau de difficulté 2 (easy).' +
+			'\n-dfbj3 : Jeu du BlackJack. Niveau de difficulté 3 (normal).' +
+			'\n-dfbj4 : Jeu du BlackJack. Niveau de difficulté 4 (hard).' +
+			'\n-dfbj5 : Jeu du BlackJack. Niveau de difficulté 5 (crazy).' +
+			'\n-dfe10 : Jeu des échelle. Exemple de formulation : Sur une échelle de 1 à 10 + votre qquestion.' +
+			'\n-dfpoff : Jeu de pile ou face. Ici, vous pariez que la pièce tombera sur face.' +
+			'\n-dfpofp : Jeu de pile ou face. Ici, vous pariez que la pièce tombera sur pile.' +
+			'\n-dfpoff : [COMMANDE EN MAINTENANCE] Jeu de pile ou face. Ici, affiche le score global des joueurs et du bot [COMMANDE EN MAINTENANCE].' +
+			'\n-df6d : Lancé de dé à six faces.' +
+			'\n-df8ball : Jeu du 8ball affichant une réponse à une de vos questions pouvant être répondu par oui ou non. Exemple : df8ball Suis-je majeur ?```')
 		console.log("Un utilisateur a lancé un commande dfhelp")
 	}
 
