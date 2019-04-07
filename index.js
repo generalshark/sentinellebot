@@ -156,10 +156,10 @@ bot.on('message', function(message) {
 			.setColor(0x00AE86)
 			.setTimestamp()
 			.setFooter("©️DontFall - Propriété de Yoruichi_DontFall et de la Team DontFall")
-			.setThumbnail("https://orokin-guilde.fr/DontFall/wp-content/uploads/sites/2/2019/02/Dont_Fall-small-size-.png")
+			.setThumbnail("https://cdn.discordapp.com/attachments/542010625401028608/564525321261416448/Dont_Fall-small-size-.png")
 			.addField("Commandes serveur",
     			"-dfinserv : Affiche les informations relatives au serveur Discord.")
-			.setImage("https://orokin-guilde.fr/DontFall/wp-content/uploads/sites/2/2019/03/s%C3%A9parateur-dontfall.png")
+			.setImage("https://media.discordapp.net/attachments/537368380865249282/542440270210531339/separation2.png?width=1442&height=408")
 		message.channel.send({embed});
 	}
 
