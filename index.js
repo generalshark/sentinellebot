@@ -158,8 +158,7 @@ bot.on('message', function(message) {
 			.setFooter("©️DontFall - Propriété de Yoruichi_DontFall et de la Team DontFall")
 			.setThumbnail("https://imgur.com/qOW4iBo")
 			.addField("Commandes serveur",
-    			"\n-dfinserv : Affiche les informations relatives au serveur Discord.",
-		        "\n-dfinservs : Affiche les informations relatives au serveur Discord de manière structurée (phrases).")
+    			"-dfinserv : Affiche les informations relatives au serveur Discord.")
 		message.channel.send({embed});
 	}
 
