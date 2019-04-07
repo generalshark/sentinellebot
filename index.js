@@ -155,7 +155,11 @@ bot.on('message', function(message) {
   			.setAuthor("Dfhelp2", "https://avatars0.githubusercontent.com/u/38438400?s=40&v=4")
 			.setColor(0x00AE86)
 			.setTimestamp()
-			.setFooter("©️DontFall - Propriété intélectuelle de Yoruichi_DontFall et de la Team DontFall")
+			.setFooter("©️DontFall - Propriété de Yoruichi_DontFall et de la Team DontFall")
+			.setThumbnail("https://imgur.com/qOW4iBo")
+			.addField("Commandes serveur",
+    			"\n-dfinserv : Affiche les informations relatives au serveur Discord.",
+		        "\n-dfinservs : Affiche les informations relatives au serveur Discord de manière structurée (phrases).")
 		message.channel.send({embed});
 	}
 
