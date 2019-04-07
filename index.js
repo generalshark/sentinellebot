@@ -156,7 +156,7 @@ bot.on('message', function(message) {
 			.setColor(0x00AE86)
 			.setTimestamp()
 			.setFooter("©️DontFall - Propriété de Yoruichi_DontFall et de la Team DontFall")
-			.setThumbnail("ttps://orokin-guilde.fr/DontFall/wp-content/uploads/sites/2/2019/02/Dont_Fall-small-size-.png")
+			.setThumbnail("https://orokin-guilde.fr/DontFall/wp-content/uploads/sites/2/2019/02/Dont_Fall-small-size-.png")
 			.addField("Commandes serveur",
     			"-dfinserv : Affiche les informations relatives au serveur Discord.")
 			.setImage("https://orokin-guilde.fr/DontFall/wp-content/uploads/sites/2/2019/03/s%C3%A9parateur-dontfall.png")
