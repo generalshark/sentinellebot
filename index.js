@@ -153,6 +153,7 @@ bot.on('message', function(message) {
 		const embed = new Discord.RichEmbed()
   			.setTitle("**Utilisation** : `df<ma_commande>`")
   			.setAuthor("Dfhelp2", "https://i.imgur.com/dxEjIsT.jpg")
+			.color(0x00AE86)
 		message.channel.send({embed});
 	}
 
