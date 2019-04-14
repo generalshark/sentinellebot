@@ -1260,35 +1260,6 @@ if (message.content.startsWith("dfbj4"))
 })
 
 bot.on('message', function(message) {
-if (message.content.startsWith("canvas"))
-	
-const { createCanvas, loadImage } = require('canvas')
-const canvas = createCanvas(200, 200)
-const ctx = canvas.getContext('2d')
- 
-// Write "Awesome!"
-ctx.font = '30px Impact'
-ctx.rotate(0.1)
-ctx.fillText('Awesome!', 50, 100)
- 
-// Draw line under text
-var text = ctx.measureText('Awesome!')
-ctx.strokeStyle = 'rgba(0,0,0,0.5)'
-ctx.beginPath()
-ctx.lineTo(50, 102)
-ctx.lineTo(50 + text.width, 102)
-ctx.stroke()
- 
-// Draw cat with lime helmet
-loadImage('https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn').then((image) => {
-  ctx.drawImage(image, 50, 0, 70, 70)
- 
-  console.log('<img src="' + canvas.toDataURL() + '" />')
-})
-}
-
-
-bot.on('message', function(message) {
 if (message.content.startsWith("dfbj5")) 
 {
 	let scorebjj = 0
