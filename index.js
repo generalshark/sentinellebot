@@ -80,7 +80,7 @@ bot.on('ready', function() {
 //Accueil et départ des membres et attribution d'un rôle
 
 bot.on("guildMemberAdd", member => {
-	let role = member.guild.roles.find("name", "Nouveaux")
+	let role = member.guild.roles.find("name", "Sans licence")
 	random()
 	if (randnum ==1){
 	member.guild.channels.find("name", "discussion").send(`1️ ➡️ :alegendary:  hey ! un ${member} sauvage apparaît. :alegendary:.`)
@@ -120,7 +120,7 @@ bot.on("guildMemberRemove", member => {
 }) 
 
 bot.on("guildMemberAdd", member => {
-	let role = member.guild.roles.find("name", "Nouveaux")
+	let role = member.guild.roles.find("name", "Sans licence")
 	member.addRole(role)
 }) 
 
@@ -142,7 +142,7 @@ bot.on('message', function(message) {
 			'\n-dfe10 : Jeu des échelle. Exemple de formulation : Sur une échelle de 1 à 10 + votre qquestion.' +
 			'\n-dfpoff : Jeu de pile ou face. Ici, vous pariez que la pièce tombera sur face.' +
 			'\n-dfpofp : Jeu de pile ou face. Ici, vous pariez que la pièce tombera sur pile.' +
-			'\n-dfpoff : [COMMANDE EN MAINTENANCE] Jeu de pile ou face. Ici, affiche le score global des joueurs et du bot [COMMANDE EN MAINTENANCE].' +
+			'\n-dfpoff :  Jeu de pile ou face. Ici, affiche le score global des joueurs et du bot .' +
 			'\n-df6d : Lancé de dé à six faces.' +
 			'\n-df8ball : Jeu du 8ball affichant une réponse à une de vos questions pouvant être répondu par oui ou non. Exemple : df8ball Suis-je majeur ?```')
                         user = message.member.user.tag
@@ -152,14 +152,14 @@ bot.on('message', function(message) {
 	if (message.content === '!help2') {
 		const embed = new Discord.RichEmbed()
   			.setTitle("**Utilisation** : `df<ma_commande>`")
-  			.setAuthor("!help2", "https://avatars0.githubusercontent.com/u/38438400?s=40&v=4")
+  			.setAuthor("!help2", "https://cdn.discordapp.com/attachments/430306848793690114/606586848130760720/embleme_alliance.small.png")
 			.setColor(0x00AE86)
 			.setTimestamp()
 			.setFooter("©️DontFall")
 			.setThumbnail("https://cdn.discordapp.com/attachments/542010625401028608/564525321261416448/Dont_Fall-small-size-.png")
 			.addField("Commandes serveur",
     			"-!serv : Affiche les informations relatives au serveur Discord.")
-			.setImage("https://cdn.discordapp.com/attachments/542010625401028608/564532061810196502/admin-ajax.png")
+			.setImage("https://cdn.discordapp.com/attachments/430306848793690114/606587651822452742/Sans_titre-3.png")
 		message.channel.send({embed});
 	}
 
@@ -178,7 +178,7 @@ bot.on('message', function(message) {
     	let numero = message.guild.MemberCount
 		message.channel.send('**Nom du serveur** : "' + server_name + '"' + '\n**Créé le** : ' + cdate + '\n**Membres inscrits** : ' + server_size + '\n\n**Rejoint le** : ' + mdate + '\n**Id** : ' + numero)
 		user = message.member.user.tag
-		console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfiserv.")
+		console.log("\n\nL'utilisateur " + user + " a utilisé la commande !serv.")
 	}
 		if (message.content === '!servs') {
     	let nom = message.guild.name
@@ -187,7 +187,7 @@ bot.on('message', function(message) {
     	let numero = message.guild.MemberCount
     	message.channel.send('Le serveur **' + nom + '** a été créé le **' + cdate + '**.' + '\nVous l"avez rejoint le **' + mdate + '** et en êtes ainsi le membre n°**' + numero + '**.')
 	user = message.member.user.tag
-	console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfiservs.")
+	console.log("\n\nL'utilisateur " + user + " a utilisé la commande !servs.")
 }
 
 
