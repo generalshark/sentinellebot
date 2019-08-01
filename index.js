@@ -71,7 +71,7 @@ function randombj2(min, max){
 
 //Instance
 bot.on('ready', function() {
-	bot.user.setGame('offre des posibilités uniques | dfhelp').catch(console.error)
+	bot.user.setGame('Anthem').catch(console.error)
 	console.log("\n\n=======================================================")
 	console.log("Le bot s'est correctement connecté au serveur Discord")
 	console.log("=======================================================\n\n")
@@ -83,7 +83,7 @@ bot.on("guildMemberAdd", member => {
 	let role = member.guild.roles.find("name", "Nouveaux")
 	random()
 	if (randnum ==1){
-	member.guild.channels.find("name", "discussion").send(`1️ ➡️ Bienvenue ${member} ! N'hésites pas à te présenter dans le chanel #քrésentation et à venir nous parler en vocal dès que tu pourras 😉.`)
+	member.guild.channels.find("name", "discussion").send(`1️ ➡️ :alegendary:  hey ! un ${member} sauvage apparaît. :alegendary:.`)
 	}
 
 	if (randnum ==2){
@@ -91,11 +91,11 @@ bot.on("guildMemberAdd", member => {
 	}
 
 	if (randnum ==3){
-	member.guild.channels.find("name", "discussion").send(`3 ➡️ Félicitations ${member}, tu es notre 100 ème membre ! Tu gagnes le droit de te présenter sur #քrésentation et de venir fêter ça en vocal avec nous 😉.`)
+	member.guild.channels.find("name", "discussion").send(`3 ➡️ salut  ${member}, Tu gagnes le droit de te présenter sur #քrésentation et de venir fêter ça en vocal avec nous 😉.`)
 	}
 
 	if (randnum ==4){
-	member.guild.channels.find("name", "discussion").send(`4 ➡️ ${member}, mon élève tu seras ! Sur #քrésentation tu t'introduiras puis en vocal avec nous tu te défouleras 😉.`)
+	member.guild.channels.find("name", "discussion").send(`4 ➡️ :eyes: ${member}, vient de se glisser dans le serveur. chuuut plus un bruit ! 😉.`)
 	}
 	member.addRole(role)
 }) 
@@ -111,11 +111,11 @@ bot.on("guildMemberRemove", member => {
 	}
 
 	if (randnum ==3){
-	member.guild.channels.find("name", "départs").send(`3 ➡️ ${member} vient de claquer la porte ! 1 de perdu, 10 de retrouvés ... j'espère ... 👋🏻.`)
+	member.guild.channels.find("name", "départs").send(`3 ➡️ ${member} vient de claquer la porte ! 1 de perdu, 10 de retrouvés 👋🏻.`)
 	}
 
 	if (randnum ==4){
-	member.guild.channels.find("name", "départs").send(`4 ➡️ Patience est mère de vertus, ${member} est père/mère de ragequit 😉.`)
+	member.guild.channels.find("name", "départs").send(`4 ➡️ Patience est mère de vertus, ${member} àragequit .`)
 	}
 }) 
 
@@ -127,12 +127,12 @@ bot.on("guildMemberAdd", member => {
 //Commandes générales
 
 bot.on('message', function(message) {
-	if (message.content === 'dfhelp') {
+	if (message.content === '!help') {
 		message.channel.send('```**|=====| Commandes serveur |=====|**' + 
-			'\n-dfinserv : Affiche les informations relatives au serveur Discord.' +
-			'\n-dfinservs : Affiche les informations relatives au serveur Discord de manière structurée (phrases).' +
+			'\n-!serv : Affiche les informations relatives au serveur Discord.' +
+			'\n-!servs : Affiche les informations relatives au serveur Discord de manière structurée (phrases).' +
 			'\n\n**|=====| Général |=====|**' +
-			'\n-dfhelp : Affiche les commades disponibles du bot.' +
+			'\n-!help : Affiche les commades disponibles du bot.' +
 			'\n\n**|=====| Fun/Minigame |=====|**' +
 			'\n-dfbj1 : Jeu du BlackJack. Niveau de difficulté 1 (peaceful).' +
 			'\n-dfbj2 : Jeu du BlackJack. Niveau de difficulté 2 (easy).' +
@@ -146,31 +146,31 @@ bot.on('message', function(message) {
 			'\n-df6d : Lancé de dé à six faces.' +
 			'\n-df8ball : Jeu du 8ball affichant une réponse à une de vos questions pouvant être répondu par oui ou non. Exemple : df8ball Suis-je majeur ?```')
                         user = message.member.user.tag
-			console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfhelp.")
+			console.log("\n\nL'utilisateur " + user + " a utilisé la commande !help.")
 	}
 
-	if (message.content === 'dfhelp2') {
+	if (message.content === '!help2') {
 		const embed = new Discord.RichEmbed()
   			.setTitle("**Utilisation** : `df<ma_commande>`")
-  			.setAuthor("Dfhelp2", "https://avatars0.githubusercontent.com/u/38438400?s=40&v=4")
+  			.setAuthor("!help2", "https://avatars0.githubusercontent.com/u/38438400?s=40&v=4")
 			.setColor(0x00AE86)
 			.setTimestamp()
-			.setFooter("©️DontFall - Propriété de Yoruichi_DontFall et de la Team DontFall")
+			.setFooter("©️DontFall")
 			.setThumbnail("https://cdn.discordapp.com/attachments/542010625401028608/564525321261416448/Dont_Fall-small-size-.png")
 			.addField("Commandes serveur",
-    			"-dfinserv : Affiche les informations relatives au serveur Discord.")
+    			"-!serv : Affiche les informations relatives au serveur Discord.")
 			.setImage("https://cdn.discordapp.com/attachments/542010625401028608/564532061810196502/admin-ajax.png")
 		message.channel.send({embed});
 	}
 
-	if (message.content === 'dfhelp3') {
+	if (message.content === '!help3') {
 		message.channel.send('**|=====| Commandes serveur |=====|**' + 
-			'\n-dfinserv : Affiche les informations relatives au serveur Discord.' +
+			'\n-!serv : Affiche les informations relatives au serveur Discord.' +
 			'\n\n**|=====| Général |=====|**' +
-			'\n-dfhelp : Affiche les commades disponibles du bot.')
+			'\n-!help : Affiche les commades disponibles du bot.')
 	}
 
-	if (message.content === 'dfiserv') {
+	if (message.content === '!serv') {
 		let server_name = message.guild.name
 		let server_size = message.guild.members.size
 		let cdate = message.guild.CreatedAt
@@ -180,7 +180,7 @@ bot.on('message', function(message) {
 		user = message.member.user.tag
 		console.log("\n\nL'utilisateur " + user + " a utilisé la commande dfiserv.")
 	}
-		if (message.content === 'dfiservs') {
+		if (message.content === '!servs') {
     	let nom = message.guild.name
     	let cdate = message.guild.CreatedAt
     	let mdate = message.member.joinedAt
